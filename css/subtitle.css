@@ -1,0 +1,118 @@
+div#subtitle {
+  
+}
+div#subtitle .wrap {
+  max-width: 100%;
+  margin-bottom: 200px;
+}
+div#subtitle .wbutton{
+  position: absolute;
+  z-index: 5;
+  width: 120px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  bottom: 20px;
+  left: calc(50% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+div#subtitle .slick-prev{
+  z-index: 3;
+  left: 25px;
+}
+div#subtitle button{
+  position: static;
+  transform: translate(0,0);
+}
+div#subtitle .slick-prev::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/arrow_l.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+div#subtitle .btn_pause{
+  background:url('../img/stop.svg')no-repeat center/contain;
+  width: 24px; height: 24px;
+  text-indent: -9999px;
+  border:none;
+  cursor: pointer;
+  outline: none;
+  order: 2;
+}
+div#subtitle .btn_pause.on{ 
+  background:url('../img/play.svg')no-repeat center/contain;
+  width: 24px; height: 24px;
+  text-indent: -9999px;
+  border:none;
+  cursor: pointer;
+  outline: none;
+}
+div#subtitle .slick-next{
+  z-index: 3;
+  right: 25px;
+  order: 3;
+}
+div#subtitle .slick-next::before{
+  content: '';
+  display: block;
+  width: 20px; height: 20px;
+  background-image: url(../img/arrow_r.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+div#subtitle .slick-dots li{
+  width: 130px;
+  height: 78px;
+  border-radius: 13%;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px #fff;
+  transition: 1s;
+}
+div#subtitle .slick-dots li.slick-active{
+  width: calc(130px * 1.3);
+  height: calc(78px * 1.5);
+}
+div#subtitle .wrap img {
+  width: 100%;
+  height: 100%;
+}
+div#subtitle .wrap .slick-dots{
+  bottom: -140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 117px;
+}
+div#subtitle .wrap .slick-dots button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: initial;
+}
+div#subtitle .wrap .slick-dots button::before{  
+  position: static;
+  width: fit-content;
+  height: 6px;
+  line-height: initial;
+}
+div#subtitle .wrap .slick-dots li.slick-active button{
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+div#subtitle .wrap .slick-dots li.slick-active button:before{
+  
+}
